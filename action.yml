@@ -1,0 +1,13 @@
+name: Example action
+description: Example action
+
+inputs:
+  github-token:
+    description: The GitHub token to use for authentication
+    type: string
+    required: true        
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.github-token }}
