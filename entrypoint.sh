@@ -9,6 +9,8 @@ BRANCH=main
 REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY_OWNER}/${REPOSITORY}.git"
 WORKSPACE=/app/workspace
 
+env
+
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]" 
 
